@@ -10,8 +10,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class CarsTest {
-    private final NumberStrategy overThresholdNumberStrategy = new OverThresholdNumberStrategy();
-    private final NumberStrategy underThresholdNumberStrategy = new UnderThresholdNumberStrategy();
+    private final NumberCompareStrategy overThresholdNumberStrategy = new OverThresholdNumberStrategy();
+    private final NumberCompareStrategy underThresholdNumberStrategy = new UnderThresholdNumberStrategy();
 
     @Test
     @DisplayName("같은 이름 리스트로 생성한 cars는 항상 같아야 한다.")

@@ -1,6 +1,6 @@
 package racingcar.domain;
 
-public class OverThresholdNumberStrategy implements NumberStrategy {
+public class OverThresholdNumberStrategy implements NumberCompareStrategy {
 
     @Override
     public boolean isSameOrOverThreshold(int threshold) {

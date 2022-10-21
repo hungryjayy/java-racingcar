@@ -2,7 +2,7 @@ package racingcar.domain;
 
 import java.util.Random;
 
-public class RandomNumberStrategy implements NumberStrategy {
+public class RandomNumberCompareStrategy implements NumberCompareStrategy {
     private static final Random random = new Random();
 
     private static final int UPPER_BOUND = 10;

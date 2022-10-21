@@ -30,14 +30,14 @@ public class Car {
         return Objects.hash(getPosition(), getName());
     }
 
-    public void moveForward(NumberStrategy numberStrategy) {
-        if (isMovable(numberStrategy)) {
+    public void moveForward(NumberCompareStrategy numberCompareStrategy) {
+        if (isMovable(numberCompareStrategy)) {
             position.move();
         }
     }
 
-    private boolean isMovable(NumberStrategy numberStrategy) {
-        return numberStrategy.isSameOrOverThreshold(Car.MOVABLE_THRESHOLD);
+    private boolean isMovable(NumberCompareStrategy numberCompareStrategy) {
+        return numberCompareStrategy.isSameOrOverThreshold(Car.MOVABLE_THRESHOLD);
     }
 
     public int getPosition() {

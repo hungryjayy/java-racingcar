@@ -1,5 +1,5 @@
 package racingcar.domain;
 
-public interface NumberStrategy {
+public interface NumberCompareStrategy {
     boolean isSameOrOverThreshold(int threshold);
 }

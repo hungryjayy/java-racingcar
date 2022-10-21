@@ -33,8 +33,8 @@ public class Cars {
         return Objects.hash(cars);
     }
 
-    public void race(NumberStrategy numberStrategy) {
-        cars.forEach(car -> car.moveForward(numberStrategy));
+    public void race(NumberCompareStrategy numberCompareStrategy) {
+        cars.forEach(car -> car.moveForward(numberCompareStrategy));
     }
 
     public List<String> getCarNames() {

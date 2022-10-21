@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CarTest {
-    private final NumberStrategy overThresholdNumberStrategy = new OverThresholdNumberStrategy();
-    private final NumberStrategy underThresholdNumberStrategy = new UnderThresholdNumberStrategy();
+    private final NumberCompareStrategy overThresholdNumberStrategy = new OverThresholdNumberStrategy();
+    private final NumberCompareStrategy underThresholdNumberStrategy = new UnderThresholdNumberStrategy();
 
     @Test
     @DisplayName("임계치를 넘는 경우 position 값을 1 증가시킨다.")
