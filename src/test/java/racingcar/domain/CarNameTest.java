@@ -17,7 +17,7 @@ public class CarNameTest {
     }
 
     @Test
-    @DisplayName("5자 길이의 자동차 이름을 생성한다.")
+    @DisplayName("자동차 이름이 5자를 초과하면 생성에 실패한다.")
     void valueOf_ShouldFailWhenANameOfNamesOver5() {
         assertThatThrownBy(() -> CarName.valueOf("abcdef"))
                 .isInstanceOf(IllegalArgumentException.class)
